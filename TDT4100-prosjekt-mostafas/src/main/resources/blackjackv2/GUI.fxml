@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blackjackv2.BlackjackController">
+   <children>
+      <Button fx:id="hitButton" layoutX="240.0" layoutY="354.0" mnemonicParsing="false" onAction="#onHit" prefHeight="26.0" prefWidth="50.0" text="Hit" />
+      <TextArea fx:id="dealerHandText" editable="false" layoutX="37.0" layoutY="95.0" prefHeight="41.0" prefWidth="533.0" />
+      <TextArea fx:id="playerHandText" editable="false" layoutX="37.0" layoutY="212.0" prefHeight="32.0" prefWidth="533.0" />
+      <Label layoutX="261.0" layoutY="78.0" text="Dealer Hand" />
+      <Label layoutX="265.0" layoutY="192.0" text="Your Hand" />
+      <Button fx:id="newGame" layoutX="261.0" layoutY="14.0" mnemonicParsing="false" onAction="#newGame" text="New Game" />
+      <Button fx:id="standButton" layoutX="303.0" layoutY="354.0" mnemonicParsing="false" onAction="#onStand" text="Stand" />
+      <TextArea fx:id="gameStateText" editable="false" layoutX="222.0" layoutY="306.0" prefHeight="41.0" prefWidth="147.0" />
+      <TextArea fx:id="scoreTextArea" editable="false" layoutX="498.0" layoutY="20.0" prefHeight="5.0" prefWidth="68.0" />
+      <Button fx:id="resetButton" layoutX="508.0" layoutY="61.0" mnemonicParsing="false" onAction="#onReset" prefHeight="17.0" prefWidth="50.0" text="Reset" />
+      <Label layoutX="520.0" layoutY="6.0" text="wins" />
+   </children>
+</AnchorPane>
